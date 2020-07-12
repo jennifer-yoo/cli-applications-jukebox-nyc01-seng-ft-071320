@@ -28,7 +28,7 @@ end
 
 def play(songs)
   puts "Please enter a song name or number:"
-  user_input = gets.strip
+  user_input = gets.chomp
 
   songs.each_with_index do |song_title, number|
     if song_title == user_input || number + 1 == user_input
